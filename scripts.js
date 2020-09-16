@@ -1,10 +1,10 @@
 /*-------------------------------------------------------
 Constants and variables:
 ------------------------------------------------------*/
-const GRID_SIZE = 25;      // The width of the grid's squares, in pixels
-const START_LENGTH = 5;    // Used to work out how many points you've gained
-const MAX_X = 800;         // This is the max X co-ordinate of the graphics canvas...
-const MAX_Y = 600;         // ... and this is the maximum Y co-ordinate.
+const GRID_SIZE = 10;      // The width of the grid's squares, in pixels
+const START_LENGTH = 20;    // Used to work out how many points you've gained
+const MAX_X = 250;         // This is the max X co-ordinate of the graphics canvas...
+const MAX_Y = 500;         // ... and this is the maximum Y co-ordinate.
 
 let snake = [];         // The data structure storing all the segments of the snake
 let apples = [];        // The data structure storing all the apples that randomly appear
@@ -41,10 +41,10 @@ function updateSnake() {
 
     if (snakeAlive) {     // Only process this code if the snake is alive.
 
-        if (snakeDirection == 'N') snakeHead.y--;       // North, move snake's head up
-        if (snakeDirection == 'E') snakeHead.x++;       // East, move snake's head left
-        if (snakeDirection == 'S') snakeHead.y++;       // South, move snake's head down
-        if (snakeDirection == 'W') snakeHead.x--;       // West, move snake's head right
+        if (snakeDirection == 'w') snakeHead.y--;       // North, move snake's head up
+        if (snakeDirection == 'a') snakeHead.x++;       // East, move snake's head left
+        if (snakeDirection == 's') snakeHead.y++;       // South, move snake's head down
+        if (snakeDirection == 'd') snakeHead.x--;       // West, move snake's head right
 
         snakeAlreadyTurned = false;                     // Reset the 'double move' variable (see checkKeyPress function)
 
