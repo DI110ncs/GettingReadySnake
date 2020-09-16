@@ -5,7 +5,7 @@ body {
 h1 {
   font-weight: bold;
   font-family: 'Open Sans';
-  font-size: 24pt;
+  font-size: 50pt;
   color: blue;
   text-shadow: 2px 2px 8px grey;
 }
@@ -27,7 +27,7 @@ h2 {
 }
 
 #snakeCanvas {
-    width: 800px;
-    height: 600px;
-    background-color: lightGreen;
+    width: 250px;
+    height: 500px;
+    background-color: cyan;
 }
